@@ -28,3 +28,7 @@ function deleteWord() {
 }
 
 typeWord(words[currentIndex], 0);
+
+document.querySelector('.btn').addEventListener('click', function() {
+    alert('Your CV is being downloaded.');
+});
