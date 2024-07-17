@@ -3,9 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MyPortfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="left">
+                <h1>Sahil Kumar Gupta</h1>
+                <p><span id="dynamic-text"></span></p>
+                <p>A passionate web developer with skills in creating dynamic and responsive websites. Let's build something amazing together.</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="cv.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="right">
+                <img src="images/hero.svg" alt="Vector Graphic" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="left">
+                <p>
+                    Hi, I'm Sahil Kumar Gupta, a web developer with a passion for creating dynamic and responsive websites. 
+                    I have experience in various web technologies and enjoy learning new trends and tools in the web development world. 
+                    In my free time, I like to explore open-source projects and contribute to the developer community.
+                </p>
+            </div>
+            <div class="right">
+                <img src="your-photo.jpg" alt="Sahil Kumar Gupta" class="about-photo">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-content">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Proficient in building responsive and interactive web pages using HTML5 and CSS3.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Experienced in using JavaScript for client-side scripting and creating dynamic web applications.</p>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <p>Skilled in building modern web applications using React.js.</p>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+                <p>Knowledgeable in server-side development with Node.js and Express.js.</p>
+            </div>
+            <div class="skill">
+                <h3>Git & GitHub</h3>
+                <p>Proficient in version control using Git and collaboration on GitHub.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-content">
+            <div class="project">
+                <img src="images/p1.jpg" alt="Project 1" class="project-image">
+                <h3>Project Title 1</h3>
+                <p>A brief description of Project 1. Highlight the main features and technologies used.</p>
+            </div>
+            <div class="project">
+                <img src="images/p2.jpg" alt="Project 2" class="project-image">
+                <h3>Project Title 2</h3>
+                <p>A brief description of Project 2. Highlight the main features and technologies used.</p>
+            </div>
+            <div class="project">
+                <img src="images/p3.jpg" alt="Project 3" class="project-image">
+                <h3>Project Title 3</h3>
+                <p>A brief description of Project 3. Highlight the main features and technologies used.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <div class="resume-content">
+            <p>Interested in learning more about my background and skills? Download my resume below.</p>
+            <a href="cv.pdf" download class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <p>You can reach me via email or phone:</p>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Sahil Kumar Gupta. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
